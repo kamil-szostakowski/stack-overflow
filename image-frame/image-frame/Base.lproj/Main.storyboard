@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XP9-zf-PSh">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Two Images View Controller-->
+        <scene sceneID="HAr-dE-aRu">
+            <objects>
+                <viewController id="XP9-zf-PSh" customClass="TwoImagesViewController" customModule="StackOverflow" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZvU-Ez-ncx">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ffn-aO-sTM" userLabel="User Image">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Ffn-aO-sTM" secondAttribute="height" multiplier="1:1" placeholder="YES" id="SMT-s4-EdE"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="LlW-UO-MxK" userLabel="Frame Image">
+                                <rect key="frame" x="0.0" y="156" width="375" height="375"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Ffn-aO-sTM" firstAttribute="leading" secondItem="e7q-fZ-wyR" secondAttribute="leading" id="Gcd-5V-tfm"/>
+                            <constraint firstItem="LlW-UO-MxK" firstAttribute="top" secondItem="Ffn-aO-sTM" secondAttribute="top" id="LRc-sS-yxS"/>
+                            <constraint firstItem="Ffn-aO-sTM" firstAttribute="centerY" secondItem="e7q-fZ-wyR" secondAttribute="centerY" id="Qt7-cc-XtX"/>
+                            <constraint firstItem="LlW-UO-MxK" firstAttribute="leading" secondItem="Ffn-aO-sTM" secondAttribute="leading" id="gId-p4-Oxa"/>
+                            <constraint firstItem="LlW-UO-MxK" firstAttribute="bottom" secondItem="Ffn-aO-sTM" secondAttribute="bottom" id="mF1-mX-k9O"/>
+                            <constraint firstItem="LlW-UO-MxK" firstAttribute="trailing" secondItem="Ffn-aO-sTM" secondAttribute="trailing" id="nPc-Sg-7qw"/>
+                            <constraint firstItem="e7q-fZ-wyR" firstAttribute="trailing" secondItem="Ffn-aO-sTM" secondAttribute="trailing" id="vXJ-xh-ICH"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="e7q-fZ-wyR"/>
+                    </view>
+                    <connections>
+                        <outlet property="frameImageView" destination="LlW-UO-MxK" id="BYB-qi-3mu"/>
+                        <outlet property="userImageView" destination="Ffn-aO-sTM" id="pV8-ZO-9vU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bd6-9V-e2F" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-287" y="142"/>
+        </scene>
+    </scenes>
+</document>

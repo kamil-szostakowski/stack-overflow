@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:table-view.xcodeproj">
+      location = "self:reusable-table-view.xcodeproj">
    </FileRef>
 </Workspace>

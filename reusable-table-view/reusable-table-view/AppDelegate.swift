@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  table-view
+//  reusable-table-view
 //
-//  Created by szostakowskik on 16.10.2017.
-//  Copyright © 2017 Kamil Szostakowski. All rights reserved.
+//  Created by szostakowskik on 11.01.2018.
+//  Copyright © 2018 Kamil Szostakowski. All rights reserved.
 //
 
 import UIKit
